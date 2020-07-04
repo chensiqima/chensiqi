@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL - qq@localhost" uuid="7529e3db-4f5b-4d03-84e7-1ab6515c1f3b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/qq</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="PRC" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
