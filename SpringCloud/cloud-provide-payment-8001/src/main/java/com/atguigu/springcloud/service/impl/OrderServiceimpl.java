@@ -1,5 +1,6 @@
 package com.atguigu.springcloud.service.impl;
 
+import com.atguigu.springcloud.entities.MyResult;
 import com.atguigu.springcloud.entities.Order;
 import com.atguigu.springcloud.mapper.OrderMapper;
 import com.atguigu.springcloud.service.OrderService;
@@ -14,8 +15,9 @@ public class OrderServiceimpl implements OrderService {
     private OrderMapper OrderMapper;
 
     @Override
-    public List<Order> FindAllOrder() {
+    public MyResult<List<Order>> FindAllOrder() {
 
-        return OrderMapper.FindAllOrder();
+
+        return  new MyResult<List<Order>>(200,"sucess",OrderMapper.FindAllOrder());
     }
 }

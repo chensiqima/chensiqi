@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--userMapper空间-->
+<mapper namespace="com.atguigu.springcloud.mapper.OrderMapper">
+
+
+
+    <select id="FindAllOrder" resultType="com.atguigu.springcloud.entities.Order">
+        SELECT  * FROM  qq.order
+    </select>
+</mapper>
