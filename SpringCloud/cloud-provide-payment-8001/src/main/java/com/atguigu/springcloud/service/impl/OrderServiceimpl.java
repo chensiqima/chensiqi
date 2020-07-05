@@ -16,8 +16,25 @@ public class OrderServiceimpl implements OrderService {
 
     @Override
     public MyResult<List<Order>> FindAllOrder() {
+        List<Order> list=OrderMapper.FindAllOrder();
+        if (list!=null){
+            return  new MyResult<List<Order>>(200,"sucess",OrderMapper.FindAllOrder());
+        }else {
+            return  new MyResult<List<Order>>(400,"fail");
+        }
 
 
-        return  new MyResult<List<Order>>(200,"sucess",OrderMapper.FindAllOrder());
+
+    }
+
+    @Override
+    public MyResult<String> InsertOrder(Order order) {
+        System.out.println("order = " + order);
+        int num=OrderMapper.InsertOrder(order);
+        if (num>0){
+            return new MyResult<>(0,"注册成功");
+        }else {
+            return new MyResult<>(1,"注册失败");
+        }
     }
 }

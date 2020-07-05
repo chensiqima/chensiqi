@@ -8,6 +8,9 @@
   <modules>
 
     <module>cloud-provide-payment-8001</module>
+    <module>cloud-customer-order-80</module>
+    <module>cloud-api-commons</module>
+      <module>cloud-eureka-server-7001</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>

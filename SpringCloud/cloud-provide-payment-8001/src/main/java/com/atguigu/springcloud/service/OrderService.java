@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface OrderService {
     MyResult<List<Order>> FindAllOrder();
+    MyResult<String> InsertOrder(Order order);
 }

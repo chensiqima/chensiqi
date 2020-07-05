@@ -8,4 +8,8 @@
     <select id="FindAllOrder" resultType="com.atguigu.springcloud.entities.Order">
         SELECT  * FROM  qq.order
     </select>
+
+    <insert id="InsertOrder">
+      INSERT INTO qq.order (money,username) values (#{order.money,jdbcType=DOUBLE},#{order.username,jdbcType=VARCHAR})
+    </insert>
 </mapper>
